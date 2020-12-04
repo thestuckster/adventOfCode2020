@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Linq;
 using AdventOfCode.DayOne;
+using AdventOfCode.DayTwo;
 
 namespace AdventOfCode
 {
@@ -7,8 +9,14 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            Console.Out.WriteLine(ExpenseReport.FindDouble());
-            Console.Out.WriteLine(ExpenseReport.FindTriple());
+            // Day One
+            // Console.Out.WriteLine("Day One");
+            // Console.Out.WriteLine(ExpenseReport.FindDouble());
+            // Console.Out.WriteLine(ExpenseReport.FindTriple());
+            
+            //Day Two
+            var dayTwo = PasswordValidator.FindValidPasswords();
+            dayTwo.ForEach(Console.Out.WriteLine);
         }
     }
 }
